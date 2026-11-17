@@ -201,3 +201,8 @@ a:hover { background: #FCF31A; text-decoration-color: #111111; }
   .js-nav, .js-cta { display: none !important; }
   .js-burger { display: flex !important; }
 }
+
+/* Escala general en pantalles d’ordinador (igual que la vista de disseny) */
+@media (min-width: 1024px) {
+  html { zoom: 0.72; }
+}
