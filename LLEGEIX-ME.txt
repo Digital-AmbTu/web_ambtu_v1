@@ -1,0 +1,15 @@
+Web AmbTu · HTML, CSS i JS sense dependències
+
+Obre index.html al navegador.
+
+Estructura
+- *.html          Pàgines (Inici, Qui som, Què fem, Projectes propis, Formació, Novetats, Contacte)
+- css/ambtu.css   Colors, tipografia i estils comuns
+- js/main.js      Menú desplegable i mòbil, equip, filtres de novetats i formularis
+- assets/         Logotip
+
+Notes
+- Les fotos es carreguen des d'Unsplash i des de ambtu.coop (equip i logotips). Cal connexió a internet.
+- Les icones es carreguen des de la CDN de Lucide.
+- Els formularis no envien dades: només validen i mostren el missatge de confirmació. Cal connectar-los a un servei d'enviament.
+- El botó del catàleg (PDF) i el selector d'idioma encara no tenen destinació.
