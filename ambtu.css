@@ -1,0 +1,211 @@
+/* Montserrat — família principal i pràcticament única. Servida des de Google Fonts
+   (no s'han facilitat binaris de la marca; vegeu readme.md → Tipografia). */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap");
+
+/* Paleta AmbTu — tancada. No s'inventen tons intermedis. */
+:root{
+--white:#FFFFFF;
+--yellow-pale:#FFFBBF;
+--yellow-mid:#FEF884;
+--yellow-signal:#FCF31A;
+--grey-light:#EDEDED;
+--grey-mid:#8A8A8A;
+--black:#111111;
+
+/* Superfícies — els fons clars dominen sempre (≈45% blanc, 25% groc pàl·lid). */
+--surface-page:var(--white);
+--surface-alt:var(--yellow-pale);
+--surface-soft:var(--grey-light);
+--surface-accent:var(--yellow-mid);
+--surface-accent-strong:var(--yellow-signal);
+--surface-inverse:var(--black); /* excepció deliberada: portada, tancament o dada única */
+
+/* Text — el groc mai és color de text. Sobre groc, sempre negre. */
+--text-primary:var(--black);
+--text-secondary:var(--grey-mid);
+--text-on-accent:var(--black);
+--text-inverse:var(--white);
+
+/* Línies i traços */
+--line:var(--black);
+--line-soft:var(--grey-light);
+
+/* Dades: tres nivells de groc sobre blanc o gris clar */
+--data-1:var(--yellow-signal);
+--data-2:var(--yellow-mid);
+--data-3:var(--yellow-pale);
+--data-axis:var(--black);
+--data-meta:var(--grey-mid);
+}
+
+:root{
+--font-core:"Montserrat",system-ui,sans-serif;
+/* Registre secundari, només per a codi, unitats, dates tècniques o marques de temps. */
+--font-mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+
+--weight-body:400;
+--weight-subhead:600;
+--weight-heading:800;
+--weight-display:900;
+
+--track-display:-0.035em;
+--track-heading:-0.02em;
+--track-subhead:0em;
+--track-body:0em;
+--track-label:0.15em;
+--track-number:-0.05em;
+
+--lh-display:0.95; /* @kind font */
+--lh-heading:1.1; /* @kind font */
+--lh-subhead:1.3; /* @kind font */
+--lh-body:1.55; /* @kind font */
+
+/* Proporció: màx. 3–4 nivells per peça; salt entre nivells consecutius 1,4–2,2×. */
+
+/* WEB (pantalla d'ordinador) */
+--size-display-1:72px;
+--size-display-2:56px;
+--size-heading-1:44px;
+--size-heading-2:28px;
+--size-subhead:22px;
+--size-body:18px;
+--size-small:15px;
+--size-label:13px;
+--size-mono:13px;
+--size-number:88px;
+
+/* SOCIAL 1080×1080 (es llegeix al mòbil a ~360px: tot es veu a 1/3) */
+--social-title:104px;
+--social-heading:72px;
+--social-lead:56px;
+--social-body:40px;
+--social-label:34px;   /* mínim absolut */
+--social-number:240px;
+--social-logo:110px;
+
+/* STORY 1080×1920 */
+--story-title:112px;
+--story-body:44px;
+--story-label:36px;
+--story-logo:120px;
+
+/* PRESENTACIÓ 1920×1080 */
+--slide-title:96px;
+--slide-heading:60px;
+--slide-body:32px;
+--slide-label:24px;
+--slide-number:240px;
+
+/* IMPRÈS A4 */
+--print-title:40pt; /* @kind font */
+--print-heading:20pt; /* @kind font */
+--print-lead:14pt; /* @kind font */
+--print-body:11pt; /* @kind font */
+--print-label:9pt; /* @kind font */
+
+--measure-body:62ch;
+
+--text-display:var(--weight-display) var(--size-display-1)/var(--lh-display) var(--font-core);
+--text-heading:var(--weight-heading) var(--size-heading-1)/var(--lh-heading) var(--font-core);
+--text-subhead:var(--weight-subhead) var(--size-subhead)/var(--lh-subhead) var(--font-core);
+--text-body-font:var(--weight-body) var(--size-body)/var(--lh-body) var(--font-core);
+}
+
+:root{
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:24px;
+--space-6:32px;
+--space-7:48px;
+--space-8:64px;
+--space-9:96px;
+--space-10:128px;
+--space-11:180px;
+
+/* Marges amplis: el buit forma part de la identitat. */
+--margin-page:var(--space-9);
+--margin-page-compact:var(--space-6);
+--margin-social:88px;      /* llenç 1080 */
+--margin-story:96px;       /* llenç 1080×1920 */
+--story-safe-top:280px;    /* zona lliure d'interfície d'Instagram */
+--story-safe-bottom:400px;
+
+--band-y:var(--space-10);  /* padding vertical de franja web */
+--container:1200px;
+--container-narrow:760px;
+--gutter:var(--space-6);
+--grid-columns:12; /* @kind other */
+}
+
+:root{
+/* Arrodoniment lleu: proper, mai pastilla. */
+--radius-xs:4px;   /* badges, caselles, ressaltats */
+--radius-sm:8px;   /* botons, camps, tags */
+--radius:14px;     /* blocs, tarjetes, diàlegs */
+--radius-lg:24px;  /* blocs grans en llenç social 1080 */
+--radius-pill:0;   /* no s'utilitzen pastilles */
+
+/* Gairebé mai delineat. Separar amb espai i canvi de fons.
+   Línia fina només en taules, eixos de gràfic i regles tipogràfiques puntuals. Mai contorns de blocs, botons ni camps. */
+--stroke:1px;
+--stroke-thick:2px;
+--stroke-hair:1px;
+--border:var(--stroke) solid var(--line);
+--border-thick:var(--stroke-thick) solid var(--line);
+--border-soft:var(--stroke) solid var(--line-soft);
+--rule:var(--stroke) solid var(--line);
+
+--shadow:none;
+
+--focus-ring:2px solid var(--black);
+--focus-offset:3px;
+}
+
+:root{
+--dur-fast:160ms; /* @kind other */
+--dur:240ms; /* @kind other */
+--dur-slow:400ms; /* @kind other */
+/* Transicions suaus i fluides, sense rebot. */
+--ease:cubic-bezier(0.25,0.8,0.25,1); /* @kind other */
+--ease-in-out:cubic-bezier(0.4,0,0.2,1); /* @kind other */
+--transition-ui:background-color var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease),border-color var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--surface-page);color:var(--text-primary);font:var(--text-body-font);letter-spacing:var(--track-body);-webkit-font-smoothing:antialiased;text-wrap:pretty}
+h1,h2,h3,h4,p,figure,blockquote{margin:0}
+h1{font-weight:var(--weight-display);font-size:var(--size-display-1);line-height:var(--lh-display);letter-spacing:var(--track-display)}
+h2{font-weight:var(--weight-heading);font-size:var(--size-heading-1);line-height:var(--lh-heading);letter-spacing:var(--track-heading)}
+h3{font-weight:var(--weight-heading);font-size:var(--size-heading-2);line-height:var(--lh-heading);letter-spacing:var(--track-heading)}
+p{max-width:var(--measure-body)}
+a{color:var(--text-primary);text-decoration:underline;text-decoration-thickness:2px;text-decoration-color:var(--yellow-signal);text-underline-offset:4px;transition:var(--transition-ui)}
+a:hover{color:var(--text-primary);background:var(--yellow-signal);text-decoration-color:var(--black)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:var(--focus-ring);outline-offset:var(--focus-offset)}
+hr{border:0;border-top:var(--rule);margin:var(--space-6) 0}
+code,kbd,samp{font-family:var(--font-mono);font-size:var(--size-mono);color:var(--text-secondary)}
+::selection{background:var(--yellow-signal);color:var(--black)}
+
+
+/* --- Pàgina --- */
+html { scroll-behavior: smooth; scroll-padding-top: 120px; }
+body { margin: 0; background: #FFFFFF; color: #111111; font-family: Montserrat, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: #111111; text-decoration: underline; text-decoration-color: #FCF31A; text-decoration-thickness: 2px; text-underline-offset: 4px; transition: background 160ms cubic-bezier(0.25,0.8,0.25,1); }
+a:hover { background: #FCF31A; text-decoration-color: #111111; }
+.js-hidden { display: none !important; }
+.js-burger { display: none !important; }
+.js-hint { transition: opacity 240ms cubic-bezier(0.25,0.8,0.25,1); }
+.js-card:hover .js-hint, .js-card[aria-expanded="true"] .js-hint { opacity: 1 !important; }
+@media (max-width: 899px) {
+  .js-nav, .js-cta { display: none !important; }
+  .js-burger { display: flex !important; }
+}
+
+/* Escala general en pantalles d’ordinador (igual que la vista de disseny) */
+@media (min-width: 1024px) {
+  html { zoom: 0.72; }
+}
+
+@media (max-width: 899px) { .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; } }
+@media (max-width: 559px) { .team-grid { grid-template-columns: 1fr !important; } }
