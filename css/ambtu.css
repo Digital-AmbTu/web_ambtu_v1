@@ -246,3 +246,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 120px; }
 @media (max-width: 639px) { .stat-grid { grid-template-columns: 1fr !important; } }
 @media (max-width: 899px) { .news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; } }
 @media (max-width: 559px) { .news-grid { grid-template-columns: 1fr !important; } }
+
+/* Escala general en pantalles d’ordinador (igual que la vista de disseny) */
+@media (min-width: 1024px) {
+  html { zoom: 0.72; }
+}
