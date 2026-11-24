@@ -1,15 +1,33 @@
 Web AmbTu · HTML, CSS i JS sense dependències
+Versió del 24/11/2026
 
-Obre index.html al navegador.
+Com obrir-la
+- Obre index.html al navegador (doble clic). No cal instal·lar res.
 
 Estructura
-- *.html          Pàgines (Inici, Qui som, Què fem, Projectes propis, Formació, Novetats, Contacte)
-- css/ambtu.css   Colors, tipografia i estils comuns
-- js/main.js      Menú desplegable i mòbil, equip, filtres de novetats i formularis
-- assets/         Logotip
+- index.html .............. Inici
+- qui-som.html ............ Qui som
+- que-fem.html ............ Què fem
+- projectes-propis.html ... Projectes propis
+- formacio.html ........... Formació i assessorament
+- novetats.html ........... Novetats
+- contacte.html ........... Contacte
+- css/ambtu.css ........... Colors, tipografia, estils comuns i estats hover
+- js/main.js .............. Menú desplegable i menú mòbil, fitxes de l'equip,
+                            filtres de novetats, formularis, pop-up del butlletí
+                            i xatbot ESSbot (demostració)
+- assets/fotos ............ Fotografies (de mostra, excepte les de l'equip)
+- assets/icons ............ Icones (Lucide, llicència ISC)
+- assets/logo-*.png ....... Logotip
 
-Notes
-- Les fotos es carreguen des d'Unsplash i des de ambtu.coop (equip i logotips). Cal connexió a internet.
-- Les icones es carreguen des de la CDN de Lucide.
-- Els formularis no envien dades: només validen i mostren el missatge de confirmació. Cal connectar-los a un servei d'enviament.
-- El botó del catàleg (PDF) i el selector d'idioma encara no tenen destinació.
+Coses a tenir en compte
+- La tipografia Montserrat es carrega des de Google Fonts: cal connexió a internet.
+- Els logotips de finançadors de Qui som es carreguen des de ambtu.coop.
+- Les fotos que no són de l'equip són fotos de mostra (Unsplash, via plantilles
+  gratuïtes). Cal substituir-les per fotos pròpies.
+- Els formularis (butlletí, contacte i pop-up) només validen i mostren un missatge:
+  cal connectar-los al servei d'enviament (Mailchimp, Sendinblue, etc.).
+- El xatbot és una demostració amb respostes fixes segons el flux de l'ESSbot.
+- Botons encara sense destinació: reserva de reunió (enllaç de Google Calendar),
+  catàleg en PDF, Campus Virtual, Recursos i selector d'idioma.
+- Els estils són majoritàriament en línia (style="...") per fidelitat al disseny.
